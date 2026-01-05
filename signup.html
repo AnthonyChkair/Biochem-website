@@ -14,12 +14,10 @@
 <div class="container">
   <div class="section">
     <label>Email</label><br>
-    <input type="email" placeholder="email@example.com"><br><br>
+    <input id="signup-email" type="email" placeholder="email@example.com"><br><br>
+<input id="signup-password" type="password" placeholder="Create a password"><br><br>
 
-    <label>Password</label><br>
-    <input type="password" placeholder="Create a password"><br><br>
-
-    <div class="slot">Create Account (not active yet)</div>
+<div class="slot" onclick="signUp()">Create Account</div>
 
     <p style="margin-top:15px;">
       Already have an account?
@@ -29,6 +27,8 @@
 
   <a href="index.html"><div class="slot">← Back to Home</div></a>
 </div>
+<script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+<script src="auth.js"></script>
 
 </body>
 </html>
